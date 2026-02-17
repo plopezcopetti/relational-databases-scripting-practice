@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project simulates a production-style e-commerce analytics environment using PostgreSQL and Bash scripting. The implementation prioritizes clarity and exam-style procedural scripting over production-level performance optimization.
+This project simulates a production-style e-commerce analytics environment using PostgreSQL and Bash scripting. The implementation prioritizes clarity and freeCodeCamp exam-style procedural scripting over production-level performance optimization.
 
 The goal is to:
 
