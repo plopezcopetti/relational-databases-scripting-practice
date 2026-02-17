@@ -1,0 +1,21 @@
+# Logs
+*.log
+
+# PostgreSQL dumps / backups
+*.sql.bak
+*.dump
+*.backup
+
+# Local environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode (opcional, si no querés subir tu config personal)
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
