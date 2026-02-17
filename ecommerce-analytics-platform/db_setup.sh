@@ -11,6 +11,12 @@ then
   exit 1
 fi
 
+# Terminate any existing connections to the database
+psql -X --username="$DB_USER" --dbname="postgres" -v ON_ERROR_STOP=1 -c"
+  SELECT pg_terminate_backend(pid) 
+  FROM pg_stat_activity 
+  WHERE datname = '$DB_NAME' AND pid <> pg_backend_pid();"
+
 # Recreate database (start clean)
 dropdb --username="$DB_USER" --if-exists "$DB_NAME"
 createdb --username="$DB_USER" "$DB_NAME"
