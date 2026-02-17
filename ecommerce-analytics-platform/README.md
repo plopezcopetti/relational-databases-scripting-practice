@@ -45,7 +45,7 @@ This script performs:
 1. Parameter validation
 2. Database recreation (drop + create)
 3. Schema deployment
-4. Seed data generation (1000+ records)
+4. Seed data generation
 5. Index creation
 
 Usage:
